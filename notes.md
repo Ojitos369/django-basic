@@ -93,3 +93,12 @@ to reference the app in the template
 tags for templates:  
 > - [Built-in template tags and filters](https://docs.djangoproject.com/en/4.0/ref/templates/builtins/)  
 > - [The Django template language](https://docs.djangoproject.com/en/4.0/ref/templates/language/)
+
+## [Class Based Views](https://docs.djangoproject.com/en/4.0/topics/class-based-views/)
+[Can check it too](http://ccbv.co.uk/)  
+
+<img src="./img/cbv-all.png" alt="all" width="200px">
+<img src="./img/cbv-1.png" alt="1" width="200px">
+
+<img src="./img/cbv-2.png" alt="2" width="200px">
+<img src="./img/cbv-3.png" alt="3" width="200px">
