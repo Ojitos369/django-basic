@@ -80,3 +80,16 @@ in myapp/views.py create the functions for the views
 in myapp/urls.py create the urls  
 the path parameters can be send with the url
 `path('<int:id>/', views.detail, name='detail')`
+
+## Work with templates
+mkdir -p myapp/templates/myapp
+
+## Work with links  
+in myapp/urls.py add the next variable  
+app_name = 'myapp'  
+to reference the app in the template  
+`{% url 'myapp:detail' id %}`  
+  
+tags for templates:  
+> - [Built-in template tags and filters](https://docs.djangoproject.com/en/4.0/ref/templates/builtins/)  
+> - [The Django template language](https://docs.djangoproject.com/en/4.0/ref/templates/language/)
