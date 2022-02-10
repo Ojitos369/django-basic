@@ -108,3 +108,5 @@ tags for templates:
 Regulary tests be to check:  
 > - Models
 > - Views
+
+## [Admin](https://docs.djangoproject.com/en/4.0/ref/contrib/admin/)
