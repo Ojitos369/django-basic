@@ -1,11 +1,299 @@
 body {
-    background: #000 url("../images/background.gif") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 100vh;
+    background: #1c1c1c;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-li a {
-    color: #0f0;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px;
+    padding-top: 100px;
+    height: 60px;
+    font-size: 70px;
+    color: #71632d;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header, ul {
+    background: linear-gradient(
+        to right,
+        /*hsl(98, 100%, 62%),
+        hsl(204, 100%, 59%)*/
+        #00f,
+        #0f0
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+ul > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        to right,
+        /*hsl(98, 100%, 62%),
+        hsl(204, 100%, 59%)*/
+        #00f,
+        #0f0
+    );
+    margin: 10px;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.li_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 500px;
+    background-color: #1c1c1c;
+    border: 1px solid #008888;
+    border-radius: 10px;
+    padding: 50px;
+
+    font-size: 20px;
+}
+
+/* Create animation to li_container hover and repeat it*/
+.li_container:hover {
+    animation: li_container_animation .5s;
+
+}
+
+@keyframes li_container_animation {
+    0% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 1%,
+            #ffffffff 5%,
+            #00000088 10%,
+            #00000088 100%
+        );
+    }
+    5% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 5%,
+            #ffffffff 10%,
+            #00000088 15%,
+            #00000088 100%
+        );
+    }
+    10% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 10%,
+            #ffffffff 15%,
+            #00000088 20%,
+            #00000088 100%
+        );
+    }
+    15% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 15%,
+            #ffffffff 20%,
+            #00000088 25%,
+            #00000088 100%
+        );
+    }
+    20% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 20%,
+            #ffffffff 25%,
+            #00000088 30%,
+            #00000088 100%
+        );
+    }
+    25% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 25%,
+            #ffffffff 30%,
+            #00000088 35%,
+            #00000088 100%
+        );
+    }
+    30% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 30%,
+            #ffffffff 35%,
+            #00000088 40%,
+            #00000088 100%
+        );
+    }
+    35% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 35%,
+            #ffffffff 40%,
+            #00000088 45%,
+            #00000088 100%
+        );
+    }
+    40% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 40%,
+            #ffffffff 45%,
+            #00000088 50%,
+            #00000088 100%
+        );
+    }
+    46% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 45%,
+            #ffffffff 50%,
+            #00000088 55%,
+            #00000088 100%
+        );
+    }
+    52% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 50%,
+            #ffffffff 55%,
+            #00000088 60%,
+            #00000088 100%
+        );
+    }
+    58% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 55%,
+            #ffffffff 60%,
+            #00000088 65%,
+            #00000088 100%
+        );
+    }
+    64% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 60%,
+            #ffffffff 65%,
+            #00000088 70%,
+            #00000088 100%
+        );
+    }
+    70% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 65%,
+            #ffffffff 70%,
+            #00000088 75%,
+            #00000088 100%
+        );
+    }
+    76% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 70%,
+            #ffffffff 75%,
+            #00000088 80%,
+            #00000088 100%
+        );
+    }
+    82% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 75%,
+            #ffffffff 80%,
+            #00000088 85%,
+            #00000088 100%
+        );
+    }
+    88% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 80%,
+            #ffffffff 85%,
+            #00000088 90%,
+            #00000088 100%
+        );
+    }
+    94% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 85%,
+            #ffffffff 90%,
+            #00000088 95%,
+            #00000088 100%
+        );
+    }
+    100% {
+        background: linear-gradient(
+            45deg,
+            #00000088 0%,
+            #00000088 90%,
+            #ffffffff 95%,
+            #00000088 100%,
+            #00000088 100%
+        );
+    }
+}
+
+
+li {
+    background: linear-gradient(
+        to right,
+        /*hsl(98, 100%, 62%),
+        hsl(204, 100%, 59%)*/
+        #00f,
+        #0f0
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100vw;
+    padding: 50px 0;
 }

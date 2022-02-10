@@ -1,12 +1,40 @@
+{% extends 'polls/base.html' %}
 {% load static %}
-<link rel="stylesheet" href="{% static 'polls/css/style.css' %}">
+{% block styles %}
+{{ block.super }}
+    <link rel="stylesheet" href="{% static 'polls/css/style.css' %}">
+{% endblock styles %}
+{% block title %}Premios Platzi{% endblock title %}
 
-{% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-        <li><a href="{% url 'polls:detail' question.id %}"> {{ question.question_text }} </a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No polls are available.</p>
-{% endif %}
+{% block content %}
+<header>
+    <h1>
+        Premios Platzi
+    </h1>
+</header>
+
+<main>
+    {% if latest_question_list %}
+        <ul>
+        {% for question in latest_question_list %}
+            <a href="{% url 'polls:detail' question.id %}"> <div class="li_container"> <li> {{ question.question_text }}</li> </div></a>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+</main>
+<footer>
+    <a href="https://platzi.com">Platzi</a>
+    <a href="#">Terminos y condiciones</a>
+    <a href="#">Contacto</a>
+    <a href="#">Form</a>
+    <a href="#">Politica de privacidad</a>
+</footer>
+
+{% endblock content %}
+
+{% comment "" %}
+
+
+{% endcomment %}
