@@ -102,3 +102,9 @@ tags for templates:
 
 <img src="./img/cbv-2.png" alt="2" width="200px">
 <img src="./img/cbv-3.png" alt="3" width="200px">
+
+
+## Tests  
+Regulary tests be to check:  
+> - Models
+> - Views
