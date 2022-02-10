@@ -12,10 +12,18 @@
     <title>
         {% block title %}{% endblock title %}
     </title>
+    {% block bootsload %}
+        {% load bootstrap4 %}
+        {% bootstrap_css %}
+    {% endblock bootsload %}
 </head>
 <body>
     {% block content %}
     <p>Hola from base</p>
     {% endblock content %}
+
+    {% block boostend %}
+        {% bootstrap_javascript jquery='full' %}
+    {% endblock boostend %}
 </body>
 </html>

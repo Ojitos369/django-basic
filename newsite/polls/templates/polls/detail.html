@@ -1,3 +1,12 @@
+{% extends 'polls/base.html' %}
+{% load static %}
+{% block styles %}
+{% endblock styles %}
+{% block title %}Detalles{% endblock title %}
+{% block bootsload %}
+{{ block.super }}
+{% endblock bootsload %}
+{% block content %}
 <form action=" {% url 'polls:vote' question.id %} " method="post">
     {% csrf_token %}
     <fieldset>
@@ -23,6 +32,10 @@
             <br>
         {% endfor %}
     </fieldset>
-    <input type="submit" value="Vote">
+    <input class="btn btn-primary" type="submit" value="Vote">
 </form>
 <a href="{% url 'polls:index' %}"><button>Home</button></a>
+{% endblock content %}
+{% block bootsend %}
+{{ block.super }}
+{% endblock bootsend %}
